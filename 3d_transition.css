@@ -1,0 +1,123 @@
+.rotatex>img,.rotatey>img,.rotatez>img,.rotate3d>img
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+}
+
+.rotatex>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: rotateX(60deg);
+}
+
+.rotatey>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: rotateY(60deg);
+}
+
+.rotatez>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: rotateZ(60deg);
+}
+
+.rotate3d>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: rotate3d(10,6,9,40deg);
+    /* 10 from x,6 from y,9 from z and 40 deg rotation values of x,y,z must always be +ve */
+}
+
+/* ---------SCALE--------- */
+
+.scalex>img,.scaley>img,.scalez>img,.scale3d>img
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+}
+
+.scalex>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: scaleX(0.5);
+}
+
+.scaley>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: scaleY(0.5);
+}
+
+.scalez>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform:perspective(100px) scaleZ(0.5) translateZ(10px);
+    /* scaleZ works better in css animation -its a reccomended practice */
+}
+
+.scale3d>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: scale3d(0.5,0.6,0.4);
+}
+
+/* ---------TRANSLATE--------- */
+
+.translatex>img,.translatey>img,.translatez>img,.translate3d>img
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+}
+
+.translatex>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: translateX(60px);
+}
+
+.translatey>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: translateY(60px);
+}
+
+.translatez>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: perspective(100px) translateZ(10px);
+}
+
+.translate3d>img:hover
+{
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    transform: translate3d(60px,80px,60px);
+    
+}

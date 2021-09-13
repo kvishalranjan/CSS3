@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing include padding and border in element height and width */
+    /* width=padding+border width of element */
+    /* width=padding+border height of element */
+}
+
+h1
+{
+    color: yellow;
+    text-decoration: underline;
+}
+body
+{
+    background-color: pink;
+}
+
+header
+{
+    width: 100%;
+    height: 90vh;
+    background: url('/img/machu_picchu.jpg') center;
+    z-index: 2;
+    position: fixed;
+}
+
+.wrapper
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: auto 0;
+    text-align: center;
+
+}
+
+header ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: transparent;
+}
+
+header ul li
+{
+    float: right;
+    /* display: block; */
+}
+
+header .logo 
+{
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 30px 30px;
+    font-size: 20pt;
+}
+
+header ul li a
+{
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 30px 30px;
+    display: block;
+    font-size: 20pt;
+}
+
+header ul .menu
+{
+    clear: both;
+    max-height: 12px;
+    transition: max-height .6s linear;
+}
+
+header .icon
+{
+    float: right;
+    padding: 35px 30px;
+    display: inline;
+    position: relative;
+}
+
+header .icon .menu-icon
+{
+    width: 25px;
+    height: 2px;
+    position: relative;
+    background-color: red;
+    display: block;
+    transition: background-color .2s ease-in;
+}
+
+header .icon .menu-icon::before,header .icon .menu-icon:after
+{
+    background-color: red;
+    display: block;
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 90%;
+    transition: all .2s ease-in;
+    
+}
+
+header .icon .menu-icon::before
+{
+    top: 8px;
+}
+
+header .icon .menu-icon::after
+{
+    top: -8px;
+}
+
+.menubutton 
+{
+    display: none;
+}
+
+.menubutton:checked ~ .menu
+{
+    height: 200px;
+}
+
+.menubutton:checked ~ .icon .menu-icon
+{
+    background-color: transparent;
+    
+}
+
+.menubutton:checked ~ .icon .menu-icon:before
+{
+    transform: rotate(45deg);
+}
+.menubutton:checked ~ .icon .menu-icon:after
+{
+    transform: rotate(-45deg);
+}
+
+@media screen and (min-width:768px)
+{
+    header ul li
+    {
+        float: left;
+    }
+    header ul li a 
+    {
+        padding: 30px 30px;
+    }
+    header .menu
+    {
+        float: right;
+        max-height: none;
+    }
+    header .icon
+    {
+        display: none;
+    }
+}
+
+/* @media screen and(min-width:768px)
+{
+    header
+    {
+        height: 100%;
+        width: 100%;
+        background: url('/img/wallpaper1.jpg') center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+   
+} */

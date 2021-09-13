@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1
+        {
+            background-image: linear-gradient( lightblue,seagreen);
+             /* using hex code */
+            /* background-image: linear-gradient(#add8e6,#0000cd); */
+             /* using rgba values */
+            /* background-image: linear-gradient(rgba(173, 216, 230, 0.849),rgba(0, 0, 205, 0.849)); */
+            width: 100%;
+            height: 250px;
+        }
+        #div1>p
+        {
+            color: red;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: larger;
+        }
+        table
+        {
+            width: 100%;
+            height: 600px;
+            border: thin solid red;
+        }
+
+        td
+        {
+            height: 150px;
+            width: 25%;
+            border: thin solid red;
+            text-align: center;
+            color: white;
+            font-size: 24pt;
+        }
+        .top
+        {
+            background-image: linear-gradient(to top, peru,purple);
+        }
+        .bottom
+        {
+            background-image: linear-gradient(to bottom, peru,purple);
+        }
+        .left
+        {
+            background-image: linear-gradient(to left, peru,purple);
+        }
+        .right
+        {
+            background-image: linear-gradient(to right, peru,purple);
+        }
+    </style>
+</head>
+<body>
+    <h1>This example uses linear Gradient as background color</h1>
+    <div id="div1">
+        <p>linear gradient</p>
+    </div>
+    <h1>Directions of linear gradient</h1>
+    <div>
+        <table>
+            <tr>
+                <td class="top">Top</td>
+                <td class="bottom">Bottom</td>
+            </tr>
+            <tr>
+                <td class="left">Left</td>
+                <td class="right">Right</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

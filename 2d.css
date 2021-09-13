@@ -1,0 +1,99 @@
+.translate
+{
+    margin: 30px;
+    width: 200px;
+    height: auto;
+    background-color: blue;
+}
+
+.translate>p,.scale>p
+{
+    text-align: center;
+    font: 12pt 'Arial';
+    color: white;
+}
+
+.translate:hover
+{
+    margin: 30px;
+    width: 200px;
+    height: auto;
+    background-color: blue;
+    -ms-transform: translate(2px,70px);/*microsoft edge*/
+    -webkit-transform: translate(2px,70px);/*chrome and safari*/
+    -moz-transform: translate(2px,70px);/*mozilla*/
+    -o-transform: translate(2px,70px);/*opera*/
+    transform: translate(2px,70px);
+    /* it will move 2px from X-axis(horizontal), 50px from y-axis (vertically) */
+    /* transform: translateX(500px); */
+     /* transform: translateY(500px); */
+}
+
+.scale
+{
+    padding: 90px;
+    width: 200px;
+    height: 60px;
+    background-color: coral;
+}
+
+.scale:hover
+{
+    -ms-transform: scale(2,2);/*microsoft edge*/
+    -webkit-transform: scale(2,2);/*chrome and safari*/
+    -moz-transform: scale(2,2);/*mozilla*/
+    -o-transform: scale(2,2);/*opera*/
+    transform: scale(2,2);
+    /* it will increase 3 times of its width and 4 times of height */
+    /* transform: scale(0.5,0.4); */
+    /* it will reduce 0.5 times os its width and 0.
+     of height */
+}
+
+.rotate>img,.skewx>img,.skewy>img,.skew>img
+{
+    width: 200px;
+    height: 400px;
+    padding: 30px;
+}
+
+.rotate>img:hover
+{
+    width: 200px;
+    height: 200px;
+    transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+}
+
+.skewx>img:hover
+{
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    transform: skewX(40deg);
+    /* transform: skewX(-40deg); */
+}
+
+.skewy>img:hover
+{
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    transform: skewY(40deg);
+    /* transform: skewY(-40deg); */
+}
+
+.skew>img:hover
+{
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    transform: skew(40deg,30deg);
+    /* 40 deg will skew horizontally and 30 deg will skew vertically */
+    /* transform: skew(40deg); */
+    /* only on x-axis */
+}
+
